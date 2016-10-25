@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB290CA21C7249680063AD8B /* StudentWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB290CA01C7249680063AD8B /* StudentWorld.cpp */; };
+		EB29FE391C72441C005EA9C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB29FE381C72441C005EA9C5 /* main.cpp */; };
+		EB29FE411C72444C005EA9C5 /* Actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB29FE3F1C72444C005EA9C5 /* Actor.cpp */; };
+		EB29FE441C724468005EA9C5 /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB29FE421C724468005EA9C5 /* GameWorld.cpp */; };
+		EB29FE4A1C724494005EA9C5 /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB29FE481C724494005EA9C5 /* GameController.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB29FE331C72441C005EA9C5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB290CA01C7249680063AD8B /* StudentWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StudentWorld.cpp; sourceTree = "<group>"; };
+		EB290CA11C7249680063AD8B /* StudentWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentWorld.h; sourceTree = "<group>"; };
+		EB29FE351C72441C005EA9C5 /* FrackMan3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FrackMan3; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB29FE381C72441C005EA9C5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EB29FE3F1C72444C005EA9C5 /* Actor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Actor.cpp; sourceTree = "<group>"; };
+		EB29FE401C72444C005EA9C5 /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
+		EB29FE421C724468005EA9C5 /* GameWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorld.cpp; sourceTree = "<group>"; };
+		EB29FE431C724468005EA9C5 /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
+		EB29FE481C724494005EA9C5 /* GameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameController.cpp; sourceTree = "<group>"; };
+		EB29FE491C724494005EA9C5 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		EB29FE4B1C7244AD005EA9C5 /* freeglut_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freeglut_ext.h; sourceTree = "<group>"; };
+		EB29FE4C1C7244C7005EA9C5 /* freeglut_std.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freeglut_std.h; sourceTree = "<group>"; };
+		EB29FE4D1C7244DC005EA9C5 /* freeglut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freeglut.h; sourceTree = "<group>"; };
+		EB29FE4E1C7244EA005EA9C5 /* GameConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConstants.h; sourceTree = "<group>"; };
+		EB29FE4F1C724501005EA9C5 /* GraphObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphObject.h; sourceTree = "<group>"; };
+		EB29FE501C724514005EA9C5 /* SoundFX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundFX.h; sourceTree = "<group>"; };
+		EB29FE511C724525005EA9C5 /* SpriteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB29FE321C72441C005EA9C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB29FE2C1C72441C005EA9C5 = {
+			isa = PBXGroup;
+			children = (
+				EB29FE371C72441C005EA9C5 /* FrackMan3 */,
+				EB29FE361C72441C005EA9C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB29FE361C72441C005EA9C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB29FE351C72441C005EA9C5 /* FrackMan3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB29FE371C72441C005EA9C5 /* FrackMan3 */ = {
+			isa = PBXGroup;
+			children = (
+				EB29FE381C72441C005EA9C5 /* main.cpp */,
+				EB29FE3F1C72444C005EA9C5 /* Actor.cpp */,
+				EB29FE401C72444C005EA9C5 /* Actor.h */,
+				EB29FE421C724468005EA9C5 /* GameWorld.cpp */,
+				EB29FE431C724468005EA9C5 /* GameWorld.h */,
+				EB290CA01C7249680063AD8B /* StudentWorld.cpp */,
+				EB290CA11C7249680063AD8B /* StudentWorld.h */,
+				EB29FE481C724494005EA9C5 /* GameController.cpp */,
+				EB29FE491C724494005EA9C5 /* GameController.h */,
+				EB29FE4B1C7244AD005EA9C5 /* freeglut_ext.h */,
+				EB29FE4C1C7244C7005EA9C5 /* freeglut_std.h */,
+				EB29FE4D1C7244DC005EA9C5 /* freeglut.h */,
+				EB29FE4E1C7244EA005EA9C5 /* GameConstants.h */,
+				EB29FE4F1C724501005EA9C5 /* GraphObject.h */,
+				EB29FE501C724514005EA9C5 /* SoundFX.h */,
+				EB29FE511C724525005EA9C5 /* SpriteManager.h */,
+			);
+			path = FrackMan3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB29FE341C72441C005EA9C5 /* FrackMan3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB29FE3C1C72441C005EA9C5 /* Build configuration list for PBXNativeTarget "FrackMan3" */;
+			buildPhases = (
+				EB29FE311C72441C005EA9C5 /* Sources */,
+				EB29FE321C72441C005EA9C5 /* Frameworks */,
+				EB29FE331C72441C005EA9C5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrackMan3;
+			productName = FrackMan3;
+			productReference = EB29FE351C72441C005EA9C5 /* FrackMan3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB29FE2D1C72441C005EA9C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "wenhui kuang";
+				TargetAttributes = {
+					EB29FE341C72441C005EA9C5 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = EB29FE301C72441C005EA9C5 /* Build configuration list for PBXProject "FrackMan3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB29FE2C1C72441C005EA9C5;
+			productRefGroup = EB29FE361C72441C005EA9C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB29FE341C72441C005EA9C5 /* FrackMan3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB29FE311C72441C005EA9C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB290CA21C7249680063AD8B /* StudentWorld.cpp in Sources */,
+				EB29FE4A1C724494005EA9C5 /* GameController.cpp in Sources */,
+				EB29FE391C72441C005EA9C5 /* main.cpp in Sources */,
+				EB29FE411C72444C005EA9C5 /* Actor.cpp in Sources */,
+				EB29FE441C724468005EA9C5 /* GameWorld.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB29FE3A1C72441C005EA9C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EB29FE3B1C72441C005EA9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EB29FE3D1C72441C005EA9C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB29FE3E1C72441C005EA9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB29FE301C72441C005EA9C5 /* Build configuration list for PBXProject "FrackMan3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB29FE3A1C72441C005EA9C5 /* Debug */,
+				EB29FE3B1C72441C005EA9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB29FE3C1C72441C005EA9C5 /* Build configuration list for PBXNativeTarget "FrackMan3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB29FE3D1C72441C005EA9C5 /* Debug */,
+				EB29FE3E1C72441C005EA9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB29FE2D1C72441C005EA9C5 /* Project object */;
+}
