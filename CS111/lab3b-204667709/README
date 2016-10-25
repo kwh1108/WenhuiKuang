@@ -1,0 +1,8 @@
+Team members:
+Name: Wenhui Kuang UID:204667709
+Name: Ka Tim Lam UID: 104477818
+
+In the make file includes make, make run, dist, and clean. The make only do the
+compilation. And the make run will compile and execute the program. This
+program reads the csv files generated from lab3a and we analyze this broken
+file system.

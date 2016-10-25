@@ -1,0 +1,40 @@
+
+Name: Wenhui Kuang UID:204667709
+
+Lab4-SecA-Q2b:
+When I execute the tls_client, I see that there is an message showing that it is used 
+encryption. However, when I execute the udp_client, I cannot see the encryption message showing. So, I think the message sending and receiving by using the udp protocols
+is not secured and encrypted.
+
+Lab4-SecA-Q4e:
+4) The output of this packet sniffer is the message we sent/received. Itself can be detected by the sniffer. The output shows the bytes transmitted through the network and I find out the information through the network is not encrypted at all. I can read the information clearly.
+
+Lab4-SecB-Q5b:
+When I use set_rate command, the rate is change to be the one that I set. And the sending and receiving speed increases as the rate decreases.
+
+Lab4-SecA-Q6b:
+The output is changed from rate 1 to rate 15 which goes out of the range of the program
+set_rate can do. The set_rate program can only set from range 0 to 5. Therefore, the
+udp-client must be hacked which means the udp_client program is not secured.
+
+
+Lab4-SecB-Q3b:
+The output is almost the same as the out I saw in Lab4-secB-1. The only difference is when
+I execute tls_client there is one more message showing the client and server connection is
+based on the encryption. So I think the message going through the network is encrypted from client to server and the server to client.
+
+Lab4-SecB-Q5e:
+The output is totally different from the output I get by using the udp protocol. The information through the network is encrypted as random bytes. So the get_tshark cannot get
+any information across the network.
+
+Lab4-SecB-Q6b:
+The output of the program changes the rate from 3 to 1, but the sending message to the server does not match the message received from the server. And they are differ by one. The sending message from the client to the server is delay by one message.
+
+Lab4-SecB-Q7b:
+The output does not change at all when I execute the start_attack program because the TLS protocol use encryption to all the sending and receiving message. So when we try to hack the message in between the server and client, we won’t succeed. The hacking program cannot  
+recognise the message through the network, so it cannot make any change to the message. 
+
+Lab4-secC-Q3:
+when I execute set rate the message sending to the server matching the one sending from the server because when we use two threads and each of them contains independent while loop to do the sending and receiving. They are separated and not affected by each other.
+However, in the original code the sending and receiving are put in the same while loop which will affected each other. When I use set_rate, the main thread will do the sending twice and push the receiving message off by one message. Therefore, the received message from server will delay by one message.
+

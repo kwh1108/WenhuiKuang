@@ -1,0 +1,9 @@
+This C program is to make communication between processes.
+
+I use two threads in this program, one is created within the terminal process.
+And the other one is the terminal itself.
+
+I also use two pipes to do the communication between the terminal and the shell.
+http://www.csl.mtu.edu/cs4411.ck/www/NOTES/signal/kill.html
+http://www.gnu.org/software/libc/manual/html_node/Signaling-Another-Process.html
+The websites above is the resources that I refer to when I write my program.

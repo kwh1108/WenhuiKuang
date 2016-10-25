@@ -1,0 +1,59 @@
+Name: Wenhui Kuang
+UID: 204667709
+
+2A.1A Why does it take this many threads or iterations to result in failure?
+      Because as the number of threads and iterations increase, the probability
+that threads interfere with each other increase. Therefore, when one thread is
+doing its critical section, with so many threads created, the chance this
+threads being interfered is very high. the result is wrong with so many threads
+and iterations.
+
+2A.1B:Why does a significantly smaller number of iterations so seldom fail?
+      Because with lower number of iteration which means the number of times
+for one thread executes its critical section decreases, the chance threads
+interfere each other when they are doing their critical section decreases.
+
+2A.2A: Why does the average cost per operation drop with increasing iterations?
+      The time of a context switch for the pthread_yield funcion is very big
+compared with the time per operation. The time per operation is actually
+calculated as the (time for pthread_yield + elasped time)/operations. As the
+operations go up the time for pthread_yield/operations goes down which makes
+the time per operation goes down.
+
+2A.2B: How do we know what the “correct” cost is?
+      We need to take a very huge number of operations so that the time per
+operation will get close to the correct value because the part of the yield
+time over total number of operations is approaching zero..
+
+2A.2C: Why are the --yield runs so much slower?  Where is the extra time going?
+      Because the time of a context switch for the pthread_yield function is
+costly which will dramatically affect the perfamance of the calculation. The
+extra time is for storing and restoring the registers and other information of
+the thread when it is blocked and returned.
+
+2A.2D: Can we get valid timings if we are using --yield?  How, or why not?
+      I think we cannot get the valid timing because the yield library call
+always put the threads who are asking for the lock to sleep which will involve
+context switch. This is absolutely hurt the performance.
+
+2A.3A: Why do all of the options perform similarly for low numbers of threads?
+       Because with low number of threads the total time for other threads to
+wait for the lock is very small for the mutex, spin lock, and compare_and_swap
+, the time per operation is very close with all the options.
+
+2A.3B: Why do the three protected operations slow down as the number of
+threads rises?
+      Because as the number of threads goes up, the number of threads waiting
+for the lock increases which means the total time to complete all the
+interations goes up, espectially for the spin lock and compare_and_swap lock,
+they are using the while loop to let other threads spin within it which means
+they are wasting the cpu clock cycles. Therefore, the three protected
+operations slow down as the number of threads rises.
+
+2A.3C: Why are spin-locks so expensive for large numbers of threads?
+      Because the spin lock doesn't put the thread to sleep, threads looking
+for lock are spinning in a while loop which is wasting cpu cycles if the thread
+number is far more than the cores number. we can increase the number of cores
+to accommondate this. However, this is unrealistic for having huge amount of
+threads running with the same number of cpus. So spin lock is so expensive for
+huge number of threads.

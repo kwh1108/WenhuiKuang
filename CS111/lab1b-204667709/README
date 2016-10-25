@@ -1,0 +1,10 @@
+Name: Wenhui KUang
+UID:204667709
+
+This program consist of two parts which are the client and the server. Both of
+the client and server accept the optional argument which is encryption to let
+the data coming from the client encrypted and decrypted by the server using my
+key to make sure the message is securced over the network.
+
+http://stackoverflow.com/questions/13443571/aes-encryption-in-php-and-c-with-mcrypt
+this is the website I refer to when I write my program. 

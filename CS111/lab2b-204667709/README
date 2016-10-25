@@ -1,0 +1,20 @@
+Name: Wenhui Kuang
+UID: 204667709
+
+2B.1A. Explain the variation in time per operation vs the number of iterations?
+Cost per op = (thread creation cost + list operations cost) / # of operations.
+With small amount of iterations the cost of creating threads overwhelm the cost
+of list operations. So the cost per operation will be high with small number of
+iterations. However, when the list operation cost is close to the thread
+creation cost, the cost per operation will reach the smallest. In constrast,
+with high number of operations the cost per operation will go up again because
+the list operation cost overwhelm the thread creation cost.
+
+2B.1B. How would you propose to correct for this effect?
+One correction would be to graph (average cost per operation / number of elements) vs the number of operations.
+
+2B.2A. Compare the variation in time per protected operation vs the number of threads in Project 2B and in Project 2A.  Explain the difference.
+1.list critical section is larger than the critical section of the add function
+2.Lock is held much larger in list.
+3.Probility of conflict is much larger for the same number of threads in list.
+4.More conflicts means more blocked threads, more overhead, less parallelism.
